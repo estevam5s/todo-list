@@ -20,7 +20,7 @@ Esse é um projeto de uma lista de tarefas, onde o usuário pode adicionar, remo
 * Git
 
 ## Live Demo
-to view live demo (https://vercel/)
+to view live demo (https://todo-list-eight-vert.vercel.app/)
 
 ## Support and Contact
 * [Github](https://github.com/estevam5s)
