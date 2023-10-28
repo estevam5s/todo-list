@@ -1,0 +1,31 @@
+Lembre-se de que o Husky apenas impede commits inválidos.
+Ele não tem impacto nas mensagens de commit já existentes no histórico do seu repositório.
+
+exemplo:
+
+Exemplo de Commit Válido:
+
+git commit -m "feat: implement new feature"
+
+
+Exemplo de Commit Inválido:
+
+git commit -m "Implement new feature"  # Mensagem sem prefixo
+
+
+Ou:
+
+git commit -m "fix - resolve a bug"  # Uso incorreto do separador (deve ser dois-pontos ":")
+
+
+Caso você comente da maneira errado, isso aparecerá no seu terminal:
+
+➜  git commit -m "Implement new feature"
+⧗   input: Implement new feature
+✖   subject may not be empty [subject-empty]
+✖   type may not be empty [type-empty]
+
+✖   found 2 problems, 0 warnings
+ⓘ   Get help: https://github.com/conventional-changelog/commitlint/#what-is-commitlint
+
+husky - commit-msg hook exited with code 1 (error)
