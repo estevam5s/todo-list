@@ -11,6 +11,7 @@ yarn-error.log
 
 # Arquivos de ambiente
 .env
+config.js
 
 # Dependendo do seu ambiente de desenvolvimento, você também pode adicionar outras entradas, como:
 
@@ -20,6 +21,7 @@ yarn-error.log
 # Logs
 /log
 *.log*
+*.log
 
 # Arquivos temporários
 *.tmp

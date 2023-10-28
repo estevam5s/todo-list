@@ -1,0 +1,7 @@
+# Arquivos e pastas a serem ignorados ao criar a imagem Docker
+node_modules/
+dist/
+.git/
+.gitignore
+.dockerignore
+*.log

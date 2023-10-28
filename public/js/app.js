@@ -25,13 +25,16 @@ document.addEventListener('DOMContentLoaded', () => {
   const createTaskElement = (task) => {
     const listItem = document.createElement('li');
     listItem.innerHTML = `
-            <span>${task.name}</span>
-            <button class="delete-task" data-task-id="${task.id}">Excluir</button>
-        `;
+      <span>${task.name}</span>
+      <button class="delete-task" data-task-id="${task.id}">Excluir</button>
+      <button class="update-task" data-task-id="${task.id}">Atualizar</button>
+    `;
     taskList.appendChild(listItem);
 
-    listItem.addEventListener('click', () => {
-      updateTaskStatus(task.id, true);
+    listItem.addEventListener('click', (event) => {
+      if (event.target.classList.contains('update-task')) {
+        updateTaskStatus(task.id, true);
+      }
     });
   };
 
