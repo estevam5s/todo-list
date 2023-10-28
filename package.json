@@ -13,6 +13,7 @@
     "git-util": "./git.sh",
     "debug": "node --inspect=0.0.0.0:9229 server.js",
     "test-client": "mocha public/test/app.test.js",
+    "grunt-jshint": "npx grunt jshint",
     "deploy": ""
   },
   "keywords": [],
@@ -31,6 +32,8 @@
     "chai": "^4.3.10",
     "clean-webpack-plugin": "^4.0.0",
     "css-loader": "^6.8.1",
+    "grunt": "^1.6.1",
+    "grunt-contrib-jshint": "^3.2.0",
     "html-webpack-plugin": "^5.5.3",
     "husky": "^8.0.3",
     "jsdom": "^22.1.0",
