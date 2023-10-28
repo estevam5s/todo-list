@@ -1,0 +1,26 @@
+# Arquivos e diretórios a serem ignorados pelo Git
+
+# Arquivos de sistema
+.DS_Store
+
+# Arquivos de cache
+node_modules/
+npm-debug.log
+yarn-error.log
+.pnpm-store/
+
+# Arquivos de ambiente
+.env
+
+# Dependendo do seu ambiente de desenvolvimento, você também pode adicionar outras entradas, como:
+
+# Diretório de saída de build
+/dist
+
+# Logs
+/log
+*.log*
+
+# Arquivos temporários
+*.tmp
+*.swp

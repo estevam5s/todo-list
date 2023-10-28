@@ -1,0 +1,22 @@
+{
+  "name": "crud",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "",
+    "start": "",
+    "build": "",
+    "nodemon": "",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": ""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@prisma/client": "^5.5.2",
+    "express": "^4.18.2",
+    "prisma": "^5.5.2"
+  }
+}

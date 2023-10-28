@@ -1,0 +1,19 @@
+version: '3'
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - '3000:3000'
+    volumes:
+      - ./prisma:/app/prisma
+    env_file:
+      - .env
+  db:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: sqlite3 /var/lib/sqlite/dev.db
+    volumes:
+      - ./prisma:/var/lib/sqlite
